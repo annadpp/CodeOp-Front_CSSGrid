@@ -62,9 +62,11 @@
 .div9 {
   grid-area: 4 / 3 / 5 / 7; 
   background-color: #1D283B;
+  grid-template-columns: 4.5fr 4.5fr 1fr;
 }
 
 .div10 { 
   grid-area: 5 / 1 / 6 / 7; 
   background-color: #0F1729
 }
+
