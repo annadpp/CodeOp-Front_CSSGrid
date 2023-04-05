@@ -20,9 +20,11 @@
 .app {
   height: 100vh;
   display: grid;
-  grid-template-columns: 50px 170px repeat(4, 1fr);
-  grid-template-rows: 30px 2fr 30px 1fr 20px;
+  grid-template-columns: 45px 170px repeat(4, 1fr);
+  grid-template-rows: 25px 2fr 30px 1fr 20px;
 }
+
+/*p*/
 
 p {
   font-weight: 400;
@@ -34,6 +36,25 @@ p {
   padding-left: 5px;
 }
 
+.div5 p,
+.div10 p {
+  padding: 3px; 
+}
+
+.menu_right p {
+  padding: 0 5px;
+}
+
+.fa-xl {
+  padding: 0 10px;
+}
+
+.fa-2xl {
+  padding: 8px;
+}
+
+/*grid layout*/
+
 .div1 { 
   grid-area: 1 / 1 / 5 / 2;
   background-color: var(--gray1);
@@ -41,6 +62,20 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.icons_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons_top div:nth-child(1) {
+  padding-top: 5px;
+}
+
+.icons_bottom div:nth-child(2) {
+  padding-bottom: 5px;
 }
 
 .div2 { 
@@ -89,6 +124,10 @@ p {
   justify-content: space-between;
 }
 
+.div5 div {
+  background-color: var(--gray1)
+}
+
 .div6 {
    grid-area: 2 / 3 / 3 / 5; 
    background-color: var(--gray1);
@@ -115,6 +154,7 @@ p {
 
 .icons_terminal {
   display: flex;
+  align-items: center;
 }
 
 .div9 {
@@ -134,13 +174,15 @@ p {
   background-color: var(--gray2);
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.menu_left {
+  width: 50px;
+  text-align: center;
 }
 
 .menu_right {
   display: flex;
   justify-content: flex-end;
-}
-
-.menu_right p {
-  padding: 0 5px;
 }
